@@ -1,0 +1,221 @@
+input samples: 
+
+    """def factorial(n):
+    return 1 if n == 0 else n * factorial(n - 1)""",
+
+    """def is_palindrome(s):
+    s = s.lower().replace(" ", "")
+    return s == s[::-1]""",
+
+    """def fibonacci(n):
+    a, b = 0, 1
+    for _ in range(n):
+        a, b = b, a + b
+    return a""",
+
+    """def find_max(lst):
+    max_val = lst[0]
+    for val in lst:
+        if val > max_val:
+            max_val = val
+    return max_val""",
+
+    """def reverse_string(s):
+    return s[::-1]""",
+
+    """def count_vowels(s):
+    return sum(1 for c in s.lower() if c in 'aeiou')""",
+
+    """def flatten(lst):
+    return [item for sublist in lst for item in sublist]""",
+
+    """def read_lines(path):
+    with open(path, 'r') as f:
+        return f.readlines()""",
+
+    """def is_anagram(s1, s2):
+    return sorted(s1.lower()) == sorted(s2.lower())""",
+
+    """def get_unique(lst):
+    return list(set(lst))""",
+
+    """def binary_search(arr, target):
+    left, right = 0, len(arr) - 1
+    while left <= right:
+        mid = (left + right) // 2
+        if arr[mid] == target:
+            return mid
+        elif arr[mid] < target:
+            left = mid + 1
+        else:
+            right = mid - 1
+    return -1""",
+
+    """def merge_dicts(d1, d2):
+    return {**d1, **d2}""",
+
+    """def is_prime(n):
+    if n <= 1:
+        return False
+    for i in range(2, int(n**0.5)+1):
+        if n % i == 0:
+            return False
+    return True""",
+
+    """def dedup(seq):
+    seen = set()
+    return [x for x in seq if not (x in seen or seen.add(x))]""",
+
+    """def average(numbers):
+    return sum(numbers) / len(numbers) if numbers else 0"""
+
+
+
+
+
+sample output: 
+
+🔢 Function 1
+📦 Code:
+def factorial(n):
+    return 1 if n == 0 else n * factorial(n - 1)
+
+🧠 Generated Comment:
+calculates the factorial of a given number n recursively.
+
+🔢 Function 2
+📦 Code:
+def is_palindrome(s):
+    s = s.lower().replace(" ", "")
+    return s == s[::-1]
+
+🧠 Generated Comment:
+takes a string as input and returns a boolean value indicating whether the string is a palindrome or not. The function removes all non-alphabetic characters and converts the string to lowercase before checking if it is equal to its reverse. If the string is a palindrome, the function returns
+
+🔢 Function 3
+📦 Code:
+def fibonacci(n):
+    a, b = 0, 1
+    for _ in range(n):
+        a, b = b, a + b
+    return a
+
+🧠 Generated Comment:
+generates the first n numbers of the Fibonacci sequence and checks if any of them are prime.
+
+🔢 Function 4
+📦 Code:
+def find_max(lst):
+    max_val = lst[0]
+    for val in lst:
+        if val > max_val:
+            max_val = val
+    return max_val
+
+🧠 Generated Comment:
+takes a list of integers as input and returns the maximum value in the list.
+
+🔢 Function 5
+📦 Code:
+def reverse_string(s):
+    return s[::-1]
+
+🧠 Generated Comment:
+takes a string as input and returns the reverse of that string.
+
+🔢 Function 6
+📦 Code:
+def count_vowels(s):
+    return sum(1 for c in s.lower() if c in 'aeiou')
+
+🧠 Generated Comment:
+takes a string as input and returns the count of vowels in it.
+
+🔢 Function 7
+📦 Code:
+def flatten(lst):
+    return [item for sublist in lst for item in sublist]
+
+🧠 Generated Comment:
+takes a list of lists as input and returns a flattened list.
+
+🔢 Function 8
+📦 Code:
+def read_lines(path):
+    with open(path, 'r') as f:
+        return f.readlines()
+
+🧠 Generated Comment:
+takes a path to a file as input and returns a list of strings, where each string represents a line in the file.
+
+🔢 Function 9
+📦 Code:
+def is_anagram(s1, s2):
+    return sorted(s1.lower()) == sorted(s2.lower())
+
+🧠 Generated Comment:
+takes two strings as input and returns True if they are anagrams of each other, and False otherwise.
+
+🔢 Function 10
+📦 Code:
+def get_unique(lst):
+    return list(set(lst))
+
+🧠 Generated Comment:
+You seem to be using the pipelines sequentially on GPU. In order to maximize efficiency please use a dataset
+takes a list as input and returns a new list with only the unique elements of the input list.
+
+🔢 Function 11
+📦 Code:
+def binary_search(arr, target):
+    left, right = 0, len(arr) - 1
+    while left <= right:
+        mid = (left + right) // 2
+        if arr[mid] == target:
+            return mid
+        elif arr[mid] < target:
+            left = mid + 1
+        else:
+            right = mid - 1
+    return -1
+
+🧠 Generated Comment:
+takes in a sorted list of integers and a target integer, and returns the index of the target integer in the list if it exists, otherwise returns -1.
+
+🔢 Function 12
+📦 Code:
+def merge_dicts(d1, d2):
+    return {**d1, **d2}
+
+🧠 Generated Comment:
+takes two dictionaries as input and returns a new dictionary that contains all the key-value pairs from both input dictionaries. If a key exists in both input dictionaries, the value from d2 will overwrite the value from d1.
+
+🔢 Function 13
+📦 Code:
+def is_prime(n):
+    if n <= 1:
+        return False
+    for i in range(2, int(n**0.5)+1):
+        if n % i == 0:
+            return False
+    return True
+
+🧠 Generated Comment:
+takes an integer n as input and returns True if n is a prime number, and False otherwise.
+
+🔢 Function 14
+📦 Code:
+def dedup(seq):
+    seen = set()
+    return [x for x in seq if not (x in seen or seen.add(x))]
+
+🧠 Generated Comment:
+takes a sequence as input and returns a new sequence with duplicates removed.
+
+🔢 Function 15
+📦 Code:
+def average(numbers):
+    return sum(numbers) / len(numbers) if numbers else 0
+
+🧠 Generated Comment:
+takes in a list of numbers and returns the average of those numbers. If the list is empty, it returns 0.
